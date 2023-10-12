@@ -1,0 +1,60 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
+# Function to add two numbers
+def add(x, y):
+    return x + y
+
+# Function to subtract two numbers
+def subtract(x, y):
+    return x - y
+
+# Function to multiply two numbers
+def multiply(x, y):
+    return x * y
+
+# Function to divide two numbers
+def divide(x, y):
+    if y == 0:
+        return "Cannot divide by zero"
+    return x / y
+
+# Prompt the user for input
+print("Options:")
+print("Enter 'add' for addition")
+print("Enter 'subtract' for subtraction")
+print("Enter 'multiply' for multiplication")
+print("Enter 'divide' for division")
+
+# Get the user's choice of operation
+operation = input("Enter operation: ")
+
+# Get the two numbers from the user
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Perform the calculation based on the user's choice
+if operation == 'add':
+    result = add(num1, num2)
+elif operation == 'subtract':
+    result = subtract(num1, num2)
+elif operation == 'multiply':
+    result = multiply(num1, num2)
+elif operation == 'divide':
+    result = divide(num1, num2)
+else:
+    result = "Invalid input"
+
+# Display the result
+print(f"Result: {result}")
+
+
+# In[ ]:
+
+
+
+
+
